@@ -1,10 +1,5 @@
-#ifndef UNDERSCORE_H
-#define UNDERSCORE_H
-template<class type>
-class underscore{
+class _{
 public:
-	// underscore();
-	// ~underscore();
-	void map(type arr[], unsigned int len, type (*iteratee)(const void* value));
+	template <class Type> static void map(Type arr[], unsigned int len,  Type (*iteratee)(const void* value));
 };
-#endif
+#include "utilLib.cpp"
